@@ -1,0 +1,24 @@
+#sidebar {
+ background-color: purple;
+ color: white;
+ height: 100%;
+ padding: 0;
+ position: fixed;
+ left: 95vw;
+ top: 0;
+ width: 5vw;
+ z-index: 2;
+}
+
+#sidebar-nav {
+ margin-top: 75px;
+}
+
+.radius {
+  border-radius: 10vw;
+}
+
+.bordeUsuario {
+  border: solid 2px yellow;
+  margin-bottom: 2vh;
+}
