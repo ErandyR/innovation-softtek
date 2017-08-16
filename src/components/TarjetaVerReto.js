@@ -36,11 +36,11 @@ export default class TarjetaVerReto extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col m={3}>
-              <Link to='/paginaReto'><a  className="btn-tarjeta-reto btn-tarjeta-reto-margin btn">Contribuir</a></Link>  
+            <Col m={6}>
+              <Link to='/paginaReto'><a  className=" btn-tarjeta-reto btn"><small>Contribuir</small></a></Link>
             </Col>
             <Col m={6}>
-              <a className="btn-tarjeta-reto btn">Link Post</a>
+              <a className="btn-tarjeta-reto btn"><small>Link Post</small></a>
             </Col>
           </Row>
         </Card>
