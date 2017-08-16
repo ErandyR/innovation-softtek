@@ -63,7 +63,7 @@ export default class PaginaDetalle extends Component {
           <Col m={3} className="margenTopDetalle">
             <Col m={12} s={12}>
               <Card className='blue-grey darken-1' textClassName='white-text' title='Organigrama'>
-                Como funciona el equipo de trabajo
+                Publicaciones relacionadas
               </Card>
             </Col>
           </Col>
