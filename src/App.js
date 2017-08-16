@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import './css/App.css';
 import PagInicio from './containers/PagInicio';
 import Home from './containers/Home';
@@ -17,7 +16,7 @@ class App extends Component {
         <Route  path ='/pantallaDetalle' component={PaginaDetalle}/>
       </div>
     </Router>
-
+        
       </div>
     )
   }
