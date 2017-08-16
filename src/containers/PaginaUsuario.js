@@ -20,13 +20,25 @@ export default class PaginaUsuario extends Component{
         </Row>
         <Row>
           <Col m={4}>
-            <TarjetaPublicacion/>
+            <TarjetaPublicacion titulo='Optimizacion'
+            tipo='Idea' background='rgb(71, 168, 199)'
+            time='13 días'
+            location='GDC Monterrey'
+            descripcion='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fuga accusantium maxime.'/>
           </Col>
           <Col m={4}>
-            <TarjetaPublicacion/>
+            <TarjetaPublicacion titulo='Optimizacion'
+            tipo='Idea' background='rgb(71, 168, 199)'
+            time='13 días'
+            location='GDC Monterrey'
+            descripcion='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fuga accusantium maxime.'/>
           </Col>
           <Col m={4}>
-            <TarjetaPublicacion/>
+            <TarjetaPublicacion titulo='Optimizacion'
+            tipo='Idea' background='rgb(71, 168, 199)'
+            time='13 días'
+            location='GDC Monterrey'
+            descripcion='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fuga accusantium maxime.'/>
           </Col>
         </Row>
       </div>
