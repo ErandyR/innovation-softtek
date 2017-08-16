@@ -13,7 +13,7 @@ export default class PaginaUsuario extends Component{
           <NavPrincipal/>
         </Row>
         <Row>
-            <Col m={10} offset="m1">
+            <Col m={10} offset="m1" className="espacioSuperior">
                 <h4 className="col m10">Omar <Icon medium className="iconoUsuario">person</Icon></h4>
                 <Button waves='light' className="col m1">Follow</Button>
             </Col>
