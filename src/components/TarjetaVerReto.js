@@ -1,33 +1,49 @@
 import React from "react";
 import "../css/TarjetaVerReto.css"
-import { Row, Col, CardPanel, Button } from "react-materialize";
+import {Row, Col, CardPanel, Button, Card} from "react-materialize";
+import {Link} from 'react-router-dom';
 
 export default class TarjetaVerReto extends React.Component {
   render() {
-    return(
-      <div>
-        <Row>
-          <Col s={12} m={5}>
-              <CardPanel className="black-text">
-                <h5>How To Build A Community For ITIS</h5>
-                <div className="col s6">
-                  <i className="tiny material-icons">access_time</i>
-                  <span >a mounth ago</span>
-                </div>
-                <div className="col s6">
-                  <i className="tiny material-icons">location_on</i>
-                  <span >GDC Monterrey</span>
-                </div>
-                <p className="">Improving CoEs, Services and Practice areas through sharing best practices.</p>
-                <Button className="btn-tarjeta-reto btn-tarjeta-reto-margin" >Contribute</Button>
-                <Button className="btn-tarjeta-reto">Link Post</Button>
-                <div className="division center blue-text">
-                  <p>See Challenge</p>
-                </div>
+    let color = {
+    background:this.props.background,
 
-              </CardPanel>
-          </Col>
-        </Row>
+  }
+    return (
+      <div>
+        <Card>
+          <Row>
+            <Col m={12}>
+              <h4>{this.props.titulo}</h4>
+            </Col>
+          </Row>
+          <Row>
+            <Col m={5} offset='m7'>
+              <p  className='center' style={{background:color.background}}>{this.props.tipo}</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col m={5}>
+              <i className='material-icons'>access_time</i> <small><span>{this.props.time}</span></small>
+            </Col>
+            <Col m={7}>
+                <i className='material-icons red-text'>location_on</i> <small><span>{this.props.location}</span></small>
+            </Col>
+          </Row>
+          <Row>
+            <Col m={12}>
+              <p>{this.props.descripcion}</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col m={3}>
+              <Link to='/paginaReto'><a  className="btn-tarjeta-reto btn-tarjeta-reto-margin btn">Contribuir</a></Link>  
+            </Col>
+            <Col m={6}>
+              <a className="btn-tarjeta-reto btn">Link Post</a>
+            </Col>
+          </Row>
+        </Card>
       </div>
     );
   }
