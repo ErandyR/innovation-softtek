@@ -14,9 +14,9 @@ export default class NavDetalle extends Component {
                 <div className="sidebarDetalle" role="navigation">
                     <div className="sidebar_nav_detalle">
                         <ul className="nav nav-stacked espacioNav">
-                            <li className="espacio center"><Link to="/"><Icon medium>web</Icon></Link></li>
+                            <li className="espacio center"><Link to="/detalles"><Icon medium>web</Icon></Link></li>
                             <li className="espacio center"><Link to="/grafica"><Icon medium>equalizer</Icon></Link></li>
-                            <li className="espacio center"><a href="#"><Icon medium>public</Icon></a></li>
+                            <li className="espacio center"><Link to="/mapa"><Icon medium>public</Icon></Link></li>
                             <li className="espacio center"><a href="#"><Icon medium>attach_file</Icon></a></li>
                         </ul>
                     </div>
