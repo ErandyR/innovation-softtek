@@ -7,7 +7,7 @@ export default class PublicacionFormulario extends React.Component {
     return(
       <div>
         <div className="row">
-          <form className="col s6 offset-s3" >
+          <form >
             <div className="switch bold col s4 offset-s8">
               <label>
               Make private idea
@@ -47,7 +47,7 @@ export default class PublicacionFormulario extends React.Component {
               <p className="center bold margin0">Tags (Enter tag and press enter)</p>
               <input id="last_name" type="text" className="validate" />
             </div>
-            <div className="file-field input-field col s10 offset-s1">
+            <div className="file-field input-field col s5 offset-s1">
               <div className="btn">
                 <span>Elegir archivos</span>
                 <input type="file" />
