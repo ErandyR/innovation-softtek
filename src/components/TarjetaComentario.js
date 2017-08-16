@@ -2,7 +2,11 @@ import React,{Component} from 'react';
 import {Col} from 'react-materialize';
 
 export default class TarjetaComentario extends Component{
+
   render(){
+    const comentarioS=this.props.comentarioS;
+    console.log("comentario", comentarioS);
+
     return(
       <Col m={4} s={6}>
         <div className="card-panel grey lighten-5 z-depth-1">
@@ -12,8 +16,8 @@ export default class TarjetaComentario extends Component{
             </div>
             <div className="col s9">
               <span className="black-text">
-                Esté es un ejemplo de lo que que ingresa el usuario
-              </span>
+            {comentarioS}
+                  </span>
             </div>
           </div>
         </div>
