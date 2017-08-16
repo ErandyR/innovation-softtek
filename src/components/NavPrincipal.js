@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Col, Row, Modal} from 'react-materialize';
 import logo from '../softtek.png'
 import '../css/NavPrincipal.css';
+import PublicacionFormulario from './PublicacionFormulario';
 
 export default class NavPrincipal extends Component {
   render() {
@@ -12,15 +13,20 @@ export default class NavPrincipal extends Component {
           <Col s={1}>
             <div className='brand-logo ' to="/home"><img className='img-logo' src={logo} alt=""/></div>
           </Col>
-          <Col s={1} offset='s5'>
+          <Col s={1} offset='s4'>
             <i className='material-icons icon'>search</i>
           </Col>
           <Col s={2}>
             <input type="search"/>
           </Col>
           <Col s={1}>
-            <Modal header='Modal Header' trigger={< a  className='grey-text' ><i className='material-icons icon'>comment</i>< /a>}>
+            <Modal header='Modal Header' trigger={< a  className=' btn' >Reto< /a>}>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>
+            </Modal>
+          </Col>
+          <Col s={1}>
+            <Modal trigger={< a  className='grey-text' ><i className='material-icons icon'>comment</i>< /a>}>
+            <PublicacionFormulario/>
             </Modal>
           </Col>
           <Col s={1}>
