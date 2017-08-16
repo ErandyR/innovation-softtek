@@ -40,7 +40,7 @@ export default class TarjetaPublicacion extends Component {
         </Row>
         <Row>
           <Col m={12}>
-            <Chip>hola</Chip>
+            <Chip><Link to="/paginaTag">React</Link></Chip>
           </Col>
         </Row>
         <Row>
