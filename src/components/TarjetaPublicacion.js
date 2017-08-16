@@ -3,11 +3,9 @@ import {
   Card,
   Row,
   Col,
-  Collection,
-  CollectionItem,
-  Button,
   Chip
 } from 'react-materialize';
+import {Link} from 'react-router-dom';
 
 export default class TarjetaPublicacion extends Component {
   render() {
@@ -16,7 +14,7 @@ export default class TarjetaPublicacion extends Component {
 
   }
     return (
-      <Card actions={[< a href = '#' > Ver Detalle ...</a>]}>
+      <Card actions={[<Link to='/detalle'><a href='../detalle'>Ver mas ...</a></Link>]}>
         <Row>
           <Col m={12}>
             <h4>{this.props.titulo}</h4>
