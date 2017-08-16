@@ -1,0 +1,27 @@
+.sidebarDetalle{
+    background-color: #16a085;
+    height: 100%;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 15vh;
+    width: 5vw;
+    z-index: 2;
+}
+
+.sidebar_nav_detalle {
+    margin-top: 75px;
+}
+
+.espacioNav{
+    margin-top: 6vw;
+    margin-bottom: 5vw;
+}
+
+.espacio{
+    margin-top: 4vw;
+}
+
+a{
+    color: white;
+}

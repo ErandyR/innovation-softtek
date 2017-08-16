@@ -1,0 +1,30 @@
+.nav--height {
+  height: 15vh;
+  position: fixed;
+  z-index: 5;
+}
+
+.col-margin {
+  margin-top: 15vh;
+}
+
+.foto-perfil {
+  margin-top: 25%;
+  width: 70%;
+  border-radius: 100%;
+}
+
+.img-logo {
+  margin-top: 5%;
+  width: 40%;
+}
+
+input {
+  margin-top: 15% !important;
+}
+
+
+.icon {
+  margin-left: 40%;
+  margin-top: 25% !important;
+}
