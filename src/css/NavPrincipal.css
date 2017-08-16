@@ -1,5 +1,11 @@
 .nav--height {
   height: 15vh;
+  position: fixed;
+  z-index: 5;
+}
+
+.col-margin {
+  margin-top: 15vh;
 }
 
 .foto-perfil {

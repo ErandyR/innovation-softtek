@@ -24,7 +24,7 @@ export default class TarjetaPublicacion extends Component {
         </Row>
         <Row>
           <Col m={3} offset='m9'>
-            <p style={{background:color.background}}>{this.props.tipo}</p>
+            <p  className='center' style={{background:color.background}}>{this.props.tipo}</p>
           </Col>
         </Row>
         <Row>
@@ -47,10 +47,10 @@ export default class TarjetaPublicacion extends Component {
         </Row>
         <Row>
           <Col m={3}>
-            <i className='material-icons'>thumb_up</i>
+            <i className='material-icons blue-text'>thumb_up</i><span class="new badge">1</span>
           </Col>
           <Col m={3} offset='m6'>
-              <i className='material-icons'>thumb_down</i>
+              <i className='material-icons red-text'>thumb_down</i><span class="new badge">1</span>
           </Col>
         </Row>
       </Card>

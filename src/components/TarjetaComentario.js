@@ -1,11 +1,10 @@
 import React,{Component} from 'react';
-import {Col,Card} from 'react-materialize';
+import {Col} from 'react-materialize';
 
 export default class TarjetaComentario extends Component{
   render(){
     return(
       <Col m={4} s={6}>
-
         <div className="card-panel grey lighten-5 z-depth-1">
           <div className="row valign-wrapper">
             <div className="col s3">
