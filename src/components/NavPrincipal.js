@@ -19,7 +19,7 @@ export default class NavPrincipal extends Component {
             <input type="search"/>
           </Col>
           <Col s={1}>
-            <Modal header='Modal Header' trigger={< a  className ='grey-text' > <i className='material-icons icon'>comment</i> < /a>}>
+            <Modal header='Modal Header' trigger={< a  className='grey-text' ><i className='material-icons icon'>comment</i>< /a>}>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>
             </Modal>
           </Col>
