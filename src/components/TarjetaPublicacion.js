@@ -45,10 +45,13 @@ export default class TarjetaPublicacion extends Component {
         </Row>
         <Row>
           <Col m={3}>
-            <i className='material-icons blue-text'>thumb_up</i><span class="new badge">1</span>
+            <i className='material-icons'>comment</i><span class="new badge">0</span>
           </Col>
-          <Col m={3} offset='m6'>
-              <i className='material-icons red-text'>thumb_down</i><span class="new badge">1</span>
+          <Col m={3}>
+            <i className='material-icons red-text'>favorite_border</i><span class="new badge">1</span>
+          </Col>
+          <Col m={3}>
+            <i className='material-icons blue-text'>attachment</i><span class="new badge">0</span>
           </Col>
         </Row>
       </Card>
