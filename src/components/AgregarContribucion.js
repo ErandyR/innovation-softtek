@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Card, Modal, Button, Row, Icon } from 'react-materialize';
+import PublicacionFormularion from './PublicacionFormulario';
 
 export default class AgregarContribucion extends Component {
     render(){
@@ -10,6 +11,7 @@ export default class AgregarContribucion extends Component {
                     <Modal
                         header='Modal Header'
                         trigger={<Button floating large className='red' waves='light' icon='add' />}>
+                        <PublicacionFormularion />
                     </Modal>
                   </Card>
                 </Col>
