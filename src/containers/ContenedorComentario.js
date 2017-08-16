@@ -6,7 +6,6 @@ import TarjetaComentario from '../components/TarjetaComentario';
 export default class ContenedorComentario extends Component{
   render(){
     return(
-
       <Row>
       <ComentarioFormulario />
       <TarjetaComentario />
