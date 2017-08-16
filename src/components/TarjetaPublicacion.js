@@ -21,7 +21,7 @@ export default class TarjetaPublicacion extends Component {
           </Col>
         </Row>
         <Row>
-          <Col m={3} offset='m9'>
+          <Col m={5} offset='m7'>
             <p  className='center' style={{background:color.background}}>{this.props.tipo}</p>
           </Col>
         </Row>
