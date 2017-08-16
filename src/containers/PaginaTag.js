@@ -14,7 +14,7 @@ export default class PaginaTag extends Component{
         </Row>
         <Row>
             <Col m={10} offset="m1" className="espacioSuperior">
-                <h4 className="col m10">Ideas Related to:<strong className="etiqueta">Aqui va la etiqueta</strong></h4> 
+                <h4 className="col m10">Ideas Related to:<b className="etiqueta">React</b></h4> 
                 <Button waves='light' className="col m1">Follow</Button>
             </Col>
         </Row>

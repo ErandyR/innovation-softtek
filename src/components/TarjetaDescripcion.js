@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {Button, Icon, Row} from 'react-materialize';
+import {Button, Icon, Row, Chip} from 'react-materialize';
+import {Link} from 'react-router-dom';
 import imgDetalle from '../home.PNG';
 
 export default class TarjetaDescripcion extends Component {
@@ -19,7 +20,15 @@ export default class TarjetaDescripcion extends Component {
         <img src={imgDetalle} alt="" className="responsive-img"/>
         <p>Aplicacion en la que se puedan proponer ideas de mejora de productos o procesos internos. Otros usuarios califican y comentan la propuesta antes de aprobarla. Se muestran reportes con gráficas.</p>
         <p><Icon>location_on</Icon>GDC Monterrey <Icon>attach_file</Icon> 2 Attachment 8 Comments</p>
-        <Icon>local_offer</Icon> aqui van las etiquetas 
+        <Row>
+          <div className="col s12">
+            <Icon>local_offer</Icon>
+            <Chip>Aplicacion</Chip>
+            <Chip><Link className="black-text" to="/paginaTag" >React</Link></Chip>
+            <Chip>Propuesta</Chip>
+            <Chip>Innovation</Chip>
+          </div>
+        </Row>
       </div>
     );
   }
