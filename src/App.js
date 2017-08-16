@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './css/App.css';
+import Home from './containers/Home'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 
 
 class App extends Component {
@@ -7,8 +9,9 @@ class App extends Component {
     return (
       <div className="App">
      
+
       </div>
-    );
+    )
   }
 }
 
