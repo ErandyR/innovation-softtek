@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Col, Row, Card } from 'react-materialize';
+import { Col, Row, Card, Icon } from 'react-materialize';
 import NavPrincipal from '../components/NavPrincipal';
-import NavDetalle from  '../components/NavDetalle';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import '../css/NavDetalle.css';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import ContenidoDetalle from  '../components/ContenidoDetalle';
 import AnalyticsLikes from  './AnalyticsLikes';
 import AnalyticsMap from  './AnalyticsMap';
@@ -18,14 +18,27 @@ export default class PaginaDetalle extends Component {
                 </Row>
                 <Row>
                     <Col m={1}>
-                        <NavDetalle />
+                        <Router>
+                            <div className="sidebarDetalle" role="navigation">
+                                <div className="sidebar_nav_detalle">
+                                    <ul className="nav nav-stacked espacioNav">
+                                        <li className="espacio center"><Link to="/pantallaDetalle/detalle"><Icon medium>web</Icon></Link></li>
+                                        <li className="espacio center"><Link to="/grafica"><Icon medium>equalizer</Icon></Link></li>
+                                        <li className="espacio center"><Link to="/mapa"><Icon medium>public</Icon></Link></li>
+                                        <li className="espacio center"><a href="#"><Icon medium>attach_file</Icon></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </Router>
                     </Col>
                     <Col m={8} className="margenTopDetalle">
                         <Router>
                             <div>
-                                <Route path="/detalles" component={ContenidoDetalle}/>
-                                <Route path="/grafica" component={AnalyticsLikes}/>
-                                <Route path="/mapa" component={AnalyticsMap}/>
+                                <Switch>
+                                    <Route path="/pantallaDetalle/detalle" component={ContenidoDetalle}/>
+                                    <Route path="/grafica" component={AnalyticsLikes}/>
+                                    <Route path="/mapa" component={AnalyticsMap}/>
+                                </Switch>
                             </div>
                         </Router>
                     </Col>
