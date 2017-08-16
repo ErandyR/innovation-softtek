@@ -21,10 +21,6 @@ export default class TarjetaDescripcion extends Component {
             <p><Icon>location_on</Icon>GDC Monterrey <Icon>attach_file</Icon> 2 Attachment 8 Comments</p>
             <Icon>local_offer</Icon> aqui van las etiquetas 
         </div>
-        <div className='col l4'>
-            <div>
-            </div>
-        </div>
       </div>
     );
   }

@@ -1,5 +1,11 @@
 .nav--height {
-  height: 100px;
+  height: 15vh;
+  position: fixed;
+  z-index: 5;
+}
+
+.col-margin {
+  margin-top: 15vh;
 }
 
 .foto-perfil {
@@ -9,7 +15,6 @@
 }
 
 .img-logo {
-  margin-left: -80%;
   margin-top: 5%;
   width: 40%;
 }
