@@ -3,11 +3,9 @@ import {
   Card,
   Row,
   Col,
-  Collection,
-  CollectionItem,
-  Button,
   Chip
 } from 'react-materialize';
+import {Link} from 'react-router-dom';
 
 export default class TarjetaPublicacion extends Component {
   render() {
@@ -16,15 +14,15 @@ export default class TarjetaPublicacion extends Component {
 
   }
     return (
-      <Card actions={[< a href = '#' > Ver Detalle ...</a>]}>
+      <Card actions={[<Link to='/pantallaDetalle/detalle'><a href='../pantallaDetalle/detalle'>Ver mas ...</a></Link>]}>
         <Row>
           <Col m={12}>
             <h4>{this.props.titulo}</h4>
           </Col>
         </Row>
         <Row>
-          <Col m={3} offset='m9'>
-            <p style={{background:color.background}}>{this.props.tipo}</p>
+          <Col m={5} offset='m7'>
+            <p  className='center' style={{background:color.background}}>{this.props.tipo}</p>
           </Col>
         </Row>
         <Row>
@@ -47,10 +45,13 @@ export default class TarjetaPublicacion extends Component {
         </Row>
         <Row>
           <Col m={3}>
-            <i className='material-icons'>thumb_up</i>
+            <i className='material-icons'>comment</i><span class="new badge">0</span>
           </Col>
-          <Col m={3} offset='m6'>
-              <i className='material-icons'>thumb_down</i>
+          <Col m={3}>
+            <i className='material-icons red-text'>favorite_border</i><span class="new badge">1</span>
+          </Col>
+          <Col m={3}>
+            <i className='material-icons blue-text'>attachment</i><span class="new badge">0</span>
           </Col>
         </Row>
       </Card>

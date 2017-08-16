@@ -1,0 +1,9 @@
+.iconoUsuario{
+    border-radius: 50%;
+    background-color: darkcyan;
+    color: white;
+}
+
+.espacioSuperior{
+    margin-top: 15vh;
+}
