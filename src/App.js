@@ -5,10 +5,11 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
 class App extends Component {
-  render(){
-    return(
-      <div>
-        <Home/>
+  render() {
+    return (
+      <div className="App">
+     
+
       </div>
     )
   }
