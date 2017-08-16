@@ -1,5 +1,5 @@
 .nav--height {
-  height: 100px;
+  height: 15vh;
 }
 
 .foto-perfil {
@@ -9,7 +9,6 @@
 }
 
 .img-logo {
-  margin-left: -80%;
   margin-top: 5%;
   width: 40%;
 }
