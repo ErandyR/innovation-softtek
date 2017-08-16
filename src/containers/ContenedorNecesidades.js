@@ -11,7 +11,7 @@ export default class ContenedorNecesidades extends Component {
           <h3 className='center'>Recientes</h3>
           <TarjetaPublicacion
             titulo='Optimizacion'
-            tipo='Necesidad' background='red'
+            tipo='Necesidad' background='yellow'
             time='13 días'
             location='GDC Monterrey'
             descripcion='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fuga accusantium maxime.'/>
@@ -22,7 +22,7 @@ export default class ContenedorNecesidades extends Component {
           <h3 className='center'> Populares</h3>
           <TarjetaPublicacion
             titulo='Optimizacion'
-            tipo='Necesidad' background='red'
+            tipo='Necesidad' background='yellow'
             time='13 días'
             location='GDC Monterrey'
             descripcion='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fuga accusantium maxime.'/>
@@ -33,7 +33,7 @@ export default class ContenedorNecesidades extends Component {
           <h3 className='center'>Sugerencias</h3>
           <TarjetaPublicacion
             titulo='Optimizacion'
-            tipo='Necesidad' background='red'
+            tipo='Necesidad' background='yellow'
             time='13 días'
             location='GDC Monterrey'
             descripcion='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fuga accusantium maxime.'/>

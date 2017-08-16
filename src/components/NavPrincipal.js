@@ -22,7 +22,7 @@ export default class NavPrincipal extends Component {
             <input type="search"/>
           </Col>
           <Col s={1}>
-            <Modal header='Create a Challenge' trigger={< a  className=' btn' >Reto< /a>}>
+            <Modal header='Create a Challenge' trigger={< a  className=' btn btn-verde' >Reto< /a>}>
               <CrearReto />
               <button className="col s3 offset-s9 blue">Save Changes</button>
             </Modal>
