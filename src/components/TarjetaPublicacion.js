@@ -8,6 +8,7 @@ import {
 import {Link} from 'react-router-dom';
 
 export default class TarjetaPublicacion extends Component {
+    
   render() {
     let color = {
     background:this.props.background,
@@ -22,15 +23,15 @@ export default class TarjetaPublicacion extends Component {
         </Row>
         <Row>
           <Col m={5} offset='m7'>
-            <p  className='center' style={{background:color.background}}>{this.props.tipo}</p>
+            <p  className='center' style={{background:'rgb(71, 168, 199)'}}>{this.props.idea}</p>
           </Col>
         </Row>
         <Row>
           <Col m={5}>
-            <i className='material-icons'>access_time</i> <small><span>{this.props.time}</span></small>
+            <i className='material-icons'>access_time</i> <small><span>13 días</span></small>
           </Col>
           <Col m={7}>
-              <i className='material-icons red-text'>location_on</i> <small><span>{this.props.location}</span></small>
+              <i className='material-icons red-text'>location_on</i> <small><span>GDC Monterrey</span></small>
           </Col>
         </Row>
         <Row>
@@ -40,7 +41,7 @@ export default class TarjetaPublicacion extends Component {
         </Row>
         <Row>
           <Col m={12}>
-            <Chip><Link className="black-text" to="/paginaTag" >React</Link></Chip>
+            <Chip><Link className="black-text" to="/paginaTag" >{this.props.tag}</Link></Chip>
           </Col>
         </Row>
         <Row>
